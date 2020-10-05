@@ -15,39 +15,39 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.imobiliaria.imobiliaria.model.CategoriaModel;
-import com.imobiliaria.imobiliaria.repository.CategoriaRepository;
+import com.imobiliaria.imobiliaria.model.ProdutoModel;
+import com.imobiliaria.imobiliaria.repository.ProdutoRepository;
 
 @RestController
-@RequestMapping("/categorias")
+@RequestMapping("/produtos")
 @CrossOrigin("*")
-public class CategoriaController {
+public class ProdutoController {
 	
 	@Autowired
-	private CategoriaRepository repository;
+	private ProdutoRepository repository;
 	
 	@GetMapping
-	public ResponseEntity<List<CategoriaModel>> GetAll(){
+	public ResponseEntity<List<ProdutoModel>> GetAll(){
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	//PESQUISA POR ID
 	@GetMapping("/{id}")
-	public ResponseEntity<CategoriaModel>getById(@PathVariable long id){
+	public ResponseEntity<ProdutoModel> getById (@PathVariable long id){
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
 	//POSTANDO ALGO
 	@PostMapping
-	public ResponseEntity<CategoriaModel> post(@RequestBody CategoriaModel categoria){
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
+	public ResponseEntity<ProdutoModel> post(@RequestBody ProdutoModel produto){
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
 	}
 	
 	//ATULIZANDO A TABELA
 	@PutMapping
-	public ResponseEntity<CategoriaModel> put (@RequestBody CategoriaModel categoria){
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
+	public ResponseEntity<ProdutoModel> put (@RequestBody ProdutoModel produto){
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
 	}
 	
 	//DELETANDO ALGO NA TABELA
@@ -56,4 +56,3 @@ public class CategoriaController {
 		repository.deleteById(id);
 	}
 }
-    
