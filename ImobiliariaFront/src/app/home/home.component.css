@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.texto{
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+.textoCard{
+    font-size: 14px;
+    letter-spacing: 1pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+.containerCard{
+    width: 1000px;
+    margin: 70px auto ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.containerCard .box{
+    position: relative;
+    width: 300px;
+    height: 280px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.containerCard .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+.containerCard .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+.containerCard .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+
+.containerCard .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.containerCard .box:hover .details{
+    transform: scaleY(1);
+}
+
+
+.containerCard .box .details .content{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+text-align: center;
+padding: 15px;
+color:#fff
+}
+.containerCard .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color:#ff0;
+}
+.containerCard .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    
+}

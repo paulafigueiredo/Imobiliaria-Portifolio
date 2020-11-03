@@ -6,15 +6,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-.social-menu{
-  position: relative;
-  top: 50%;
-  
-  padding: 0;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-}
 
 .social-menu ul li{
   list-style: none;
@@ -54,7 +45,4 @@
 }
 
  
-  .ftcor{
-   
-    height: 150px;
-  }
+  
