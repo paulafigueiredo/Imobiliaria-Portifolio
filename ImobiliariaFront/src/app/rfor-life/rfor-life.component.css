@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.texto{
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}

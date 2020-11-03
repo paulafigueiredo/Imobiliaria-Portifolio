@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.texto{
+    font-size: 18pt;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+.textoCard{
+    font-size: 14px;
+    letter-spacing: 1pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+}
+
+.link{
+    list-style: none;
+}
