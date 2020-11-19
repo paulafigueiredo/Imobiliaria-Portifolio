@@ -9,6 +9,17 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RForLifeComponent } from './rfor-life/rfor-life.component';
 import { ImoveisComponent } from './imoveis/imoveis.component';
+import { SolarComponent } from './solar/solar.component';
+import { ContatoComponent } from './contato/contato.component';
+import { ImperialComponent } from './imperial/imperial.component';
+import { BelvedereComponent } from './belvedere/belvedere.component';
+import { AlamedaComponent } from './alameda/alameda.component';
+import { FaggionComponent } from './faggion/faggion.component';
+import { PhoenixComponent } from './phoenix/phoenix.component';
+import { CarmenereComponent } from './carmenere/carmenere.component';
+import { UnicoPoaComponent } from './unico-poa/unico-poa.component';
+import { VilaSuzanoComponent } from './vila-suzano/vila-suzano.component';
+import { DaVinciComponent } from './da-vinci/da-vinci.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +28,18 @@ import { ImoveisComponent } from './imoveis/imoveis.component';
     NavbarComponent,
     FooterComponent,
     RForLifeComponent,
-    ImoveisComponent
+    ImoveisComponent,
+    SolarComponent,
+    ContatoComponent,
+    ImperialComponent,
+    BelvedereComponent,
+    AlamedaComponent,
+    FaggionComponent,
+    PhoenixComponent,
+    CarmenereComponent,
+    UnicoPoaComponent,
+    VilaSuzanoComponent,
+    DaVinciComponent
   ],
   imports: [
     BrowserModule,
