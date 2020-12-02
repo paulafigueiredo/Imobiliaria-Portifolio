@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.texto{
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+.textoCard{
+    font-size: 14px;
+    letter-spacing: 1pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+.textoContato{
+    font-size: 12px;
+    letter-spacing: 0.8pt;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+button:hover{
+    color: #fff;
+}
